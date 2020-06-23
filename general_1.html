@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>kcal計算</title>
+</head>
+<body>
+
+  <p><label>身長：<input type="text" id="height"></label></p>
+  <p><label>体重：<input type="text" id="weight"></label></p>
+  <p><label>年齢：<input type="text" id="old"></label></p>
+  <p>性別：
+  <select id="gender">
+    <option value="male">男性</option>  
+    <option value="famale">女性</option>  
+  </select></p>
+  <p>アクティブ度：
+  <select id="active">
+    <option value="takai">高い</option>  
+    <option value="maamaa">まあまあ高い</option>  
+    <option value="low">低い</option>  
+  </select></p>
+  <p>目的：
+  <select id="mokuteki">
+    <option value="down">減量</option>  
+    <option value="stay">現状維持</option>  
+    <option value="up">増量</option>  
+  </select></p>
+ 
+  
+  <p id="errorheight"></p>
+  <p id="errorweight"></p>
+  <p id="errorold"></p>
+
+  <p><button type="button" onclick= "rslt();">測定</button></p>
+
+  <p id="kiso"></p>
+  <p id="syouhikcal"></p>
+  <p id="mokutekikcal"></p>
+  <p id="P_protein"></p>
+  <p id="F_fat"></p>
+  <p id="C_calbon"></p>
+
+  <script type="text/javascript" src="./js/general_1.js"></script>
+</body>
+</html>
